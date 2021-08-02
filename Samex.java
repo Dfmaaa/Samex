@@ -11,10 +11,10 @@ public class Samex{
     File ff=new File("validityOfSamex.txt");
     try {
     if(ff.exists()==false) {
-	System.out.println("Place the file where the main file is saved(Just press enter to select the default location).");
+	System.out.println("Place the file where the main file is saved(Just type M to select the default location).");
     System.out.println("File in which  data will be saved:");
     String file=input.nextLine();
-    if(file.equals("")){
+    if(file.equals("M")){
     	default_file_counter++;
     }
     File check=new File(file);
