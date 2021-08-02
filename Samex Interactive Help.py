@@ -17,6 +17,7 @@ def help(command):
        print("8.exists")
        print("9.create")
        print("10.remove")
+       print("11.rename")
    if command=="files":
        print("It will show all the files you have seen the content of or typed in it.")
    if command=="shutdown":
@@ -40,6 +41,8 @@ def help(command):
        print("It deletes a file.")
    if command=="restart":
        print("It stops the program for 4-5 seconds.")
+   if command=="rename":
+      print("It will rename a file.")
 while True:
  cmd=input() 
  help(cmd)      
