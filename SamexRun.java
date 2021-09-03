@@ -18,7 +18,7 @@ public class SamexRun {
 	}
 	static String grc(){
 	 Random r=new Random();
-	  int till=11;
+	  int till=10;//number of characters in the captcha code
 	  char[] a=new char[till];
 	  for(int n=0;n<a.length;n++){
            a[n]=(char)r.nextInt(126);
