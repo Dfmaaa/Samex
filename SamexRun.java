@@ -277,6 +277,7 @@ public class SamexRun {
         		
         			System.out.println("Invalid password.");
 			        Scanner for_cap=new Scanner(System.in);
+			        try{
 			        System.out.println("You must enter what we tell you to, to prove you are human(WARNING: IF YOU GET IT WRONG, ALL THE FILES WILL BE DELETED.)");
 			        String captcha=grc();
 			        System.out.println("Enter " + captcha);
@@ -288,6 +289,12 @@ public class SamexRun {
 			   else if(captcha.equals(entered_captcha)==true){
 			          System.out.println("Ok! Run the file again!");
 				}
+				}
+			    catch(NoSuchElementException e){
+				System.out.println("Did you just try to fool the program? You will be punished.");
+				Uninstall un=new Uninstall();
+				un.method();   
+			    }
         		System.exit(0);
                 	
         		}
