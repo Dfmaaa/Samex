@@ -7,5 +7,7 @@ Samex is a file editor. It can be used for basic file functions.
  * step 3: java Samex
  * step 4: java Samex
 ## Deletion
-Just run Uninstall.java to delete all the files. 
+* [navigate to installation folder]
+* javac Uninstall.java
+* java Uninstall 
 
