@@ -283,7 +283,7 @@ public class SamexRun {
 			        String entered_captcha=input.nextLine();
 			        if(captcha.equals(entered_captcha)==false){
 			          Uninstall uns=new Uninstall();
-			          uns.main();
+			          uns.method();
 				}
 			   else if(captcha.equals(entered_captcha)==true){
 			          System.out.println("Ok! Run the file again!");
