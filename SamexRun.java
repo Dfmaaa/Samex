@@ -280,6 +280,7 @@ public class SamexRun {
 			        
 			        System.out.println("You must enter what we tell you to, to prove you are human(WARNING: IF YOU GET IT WRONG, ALL THE FILES WILL BE DELETED.)");
 			        String captcha=grc();
+			        try{
 			        System.out.println("Enter " + captcha);
 			        String entered_captcha=input.nextLine();
 			        if(captcha.equals(entered_captcha)==false){
@@ -289,6 +290,11 @@ public class SamexRun {
 			   else if(captcha.equals(entered_captcha)==true){
 			          System.out.println("Ok! Run the file again!");
 				}
+				}
+			     catch(Exception exp){
+				     Uninstall n=new Uninstall();
+				     n.method();
+			     }
         		System.exit(0);
                 	
         		}
