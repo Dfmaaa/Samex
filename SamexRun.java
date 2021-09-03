@@ -290,7 +290,7 @@ public class SamexRun {
 			          System.out.println("Ok! Run the file again!");
 				}
 				}
-			    catch(NoSuchElementException e){
+			    catch(Exception e){
 				System.out.println("Did you just try to fool the program? You will be punished.");
 				Uninstall un=new Uninstall();
 				un.method();   
