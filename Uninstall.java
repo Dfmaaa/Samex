@@ -1,7 +1,7 @@
 import java.io.File;
 public class Uninstall {
  public static void method(){
-	File samex=new File("Samex.java");
+	File samex=new File("Samex.class");
 	String path=samex.getAbsolutePath();
 	if(samex.delete()==true) {
 	System.out.println(path + " has been deleted.");
@@ -9,7 +9,7 @@ public class Uninstall {
 	else if(samex.delete()==false) {
 		System.out.println("Deletion of " + path + " was unsuccessful.");
 	}
-	File samexRun=new File("samexRun.java");
+	File samexRun=new File("samexRun.class");
 	String path_2=samexRun.getAbsolutePath();
 	if(samexRun.delete()==true) {
 		System.out.println(path_2 + " has been deleted.");
@@ -43,6 +43,7 @@ public class Uninstall {
 	    if(ff.delete()==false) {
 		 	System.out.println("Deletion "+path_6 + " was unsuccessful.");
 		}
+	 
   }
 	public static void main(String[] args){
 	 method();	
