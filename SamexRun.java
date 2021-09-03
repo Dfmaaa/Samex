@@ -18,7 +18,7 @@ public class SamexRun {
 	}
 	static String grc(){
 	 Random r=new Random();
-	  int till=r.nextInt(10);
+	  int till=11;
 	  char[] a=new char[till];
 	  for(int n=0;n<a.length;n++){
            a[n]=(char)r.nextInt(126);
