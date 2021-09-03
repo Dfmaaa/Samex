@@ -7,7 +7,24 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Random;
 public class SamexRun {
+	static String chstr(char[] a){
+	 String re="";
+	  for(int x=0;x<a.length;x++){
+		  re+=a[x];
+	  }
+	   return re;
+	}
+	static String grc(){
+	 Random r=new Random();
+	  int till=r.nextInt(10);
+	  char[] a=new char[till];
+	  for(int n=0;n<a.length;n++){
+           a[n]=(char)r.nextInt(126);
+	  }
+	 return chstr(a);	
+	}
 	static String encrypt(String str) {
 		String fin=str;
 		for(int x=0;x<=str.length()-1;x++) {
@@ -259,6 +276,18 @@ public class SamexRun {
         	else {
         		
         			System.out.println("Invalid password.");
+			        Scanner for_cap=new Scanner(System.in);
+			        System.out.println("You must enter what we tell you to, to prove you are human(WARNING: IF YOU GET IT WRONG, ALL THE FILES WILL BE DELETED.)");
+			        String captcha=grc();
+			        System.out.println("Enter " + captcha);
+			        String entered_captcha=input.nextLine();
+			        if(captcha.equals(entered_captcha)==false){
+			          Uninstall uns=new Uninstall();
+			          uns.main();
+				}
+			   else if(captcha.equals(entered_captcha)==true){
+			          System.out.println("Ok! Run the file again!");
+				}
         		System.exit(0);
                 	
         		}
