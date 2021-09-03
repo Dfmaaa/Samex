@@ -1,6 +1,9 @@
 # Samex
 ## What is it?
 Samex is a command line file editor. It can be used for basic file functions.
+## Prerequisites
+* Python(For interactive help)
+* Java(To run Samex)
 ## Usage
  * step 1: [navigate to installation folder]
  * step 2:javac Samex.java
