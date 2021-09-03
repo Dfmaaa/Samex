@@ -1,6 +1,6 @@
 import java.io.File;
 public class Uninstall {
- public static void main(String[] args){
+ public static void method(){
 	File samex=new File("Samex.java");
 	String path=samex.getAbsolutePath();
 	if(samex.delete()==true) {
@@ -44,5 +44,8 @@ public class Uninstall {
 		 	System.out.println("Deletion "+path_6 + " was unsuccessful.");
 		}
   }
+	public static void main(String[] args){
+	 method();	
+	}
  }
 
