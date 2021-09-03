@@ -1,5 +1,4 @@
 import java.io.File;
-import java.util.Scanner;
 public class Uninstall {
  public static void main(String[] args){
 	File samex=new File("Samex.java");
@@ -34,27 +33,6 @@ public class Uninstall {
 		}
 		else if(def.delete()==false) {
 			System.out.println("Deletion of " + path_4 + " was unsuccessful.");
-		}
-	}
-	else if(def.exists()==false) {
-		Scanner inp=new Scanner(System.in);
-		System.out.println("The file you entered as the main file:");
-		String file=inp.nextLine();
-		File user=new File(file);
-		if(user.exists()==true) {
-			String path_5=user.getAbsolutePath();
-			if(user.delete()==true) {
-				System.out.println(path_5 + " has been deleted.");
-				File uninstall=new File("Uninstall.java");
-				uninstall.deleteOnExit();
-			}
-			else if(user.delete()==false) {
-				System.out.println("Deletion of" + path_5 + " was unsuccessful.");
-			}
-		}
-	
-		else if(user.exists()==false) {
-			System.out.println("The file does not exist. Maybe, you entered it in the wrong format. don't use 1 backslash. replace them with 2 backslashes.");
 		}
 	}
 	File ff=new File("Samex_Password.txt");
