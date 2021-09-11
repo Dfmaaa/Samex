@@ -13,13 +13,10 @@ def help(command):
        print("4.restart")
        print("5.dir [path]")
        print("6.cd [path]")
-       print("7.files")
        print("8.exists")
        print("9.create")
        print("10.remove")
        print("11.rename")
-   if command=="files":
-       print("It will show all the files you have seen the content of or typed in it.")
    if command=="shutdown":
        print("It closes the program.")
        
