@@ -17,9 +17,11 @@ def help(command):
        print("9.create")
        print("10.remove")
        print("11.rename")
+       print("download");
    if command=="shutdown":
        print("It closes the program.")
-       
+   if command=="download":
+      print("it will allow users to download files from the web.")
    if command=="create":
        print("It creates a file.")
    if command=="write":
