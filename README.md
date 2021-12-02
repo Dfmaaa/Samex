@@ -20,6 +20,10 @@ Samex is a command line utility program.
  * step 1: [navigate to installation folder]
  * step 2: java Samex
  * step 3:(again)java Samex
+### some accepted arguments
+ * --reset
+ * --uninstall
+ * --update
 ## Updating
  * step 1:[navigate to installation folder]
  * step 2:java Updates
@@ -28,4 +32,5 @@ Samex is a command line utility program.
 * java Uninstall 
 ## What happens if SamexRun is runned
  so far, only one feature doesn't work. restart, because SamexRun runs commands with a while loop,(from 3.0), and when the restart command is runned, the while loop breaks, and the main file(Samex), is also running a while loop that keeps using the run() method, without the main file, restart wont work because after the while loop breaks, the program will stop. shutdown uses System.exit to stop the program, that stops everything.
-
+## Encryption algorithm used for passwords
+  SHA-256 is used for passwords.
