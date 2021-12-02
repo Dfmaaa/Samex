@@ -14,7 +14,7 @@ Samex is a command line utility program.
  * java SamexInstaller
  ## If you don't have Java
  * [navigate to installation folder]
- * cd inst*
+ * cd Inst*
  * [run the file for your OS.]
 ## Usage
  * step 1: [navigate to installation folder]
