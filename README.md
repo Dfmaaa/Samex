@@ -34,3 +34,5 @@ Samex is a command line utility program.
  so far, only one feature doesn't work. restart, because SamexRun runs commands with a while loop,(from 3.0), and when the restart command is runned, the while loop breaks, and the main file(Samex), is also running a while loop that keeps using the run() method, without the main file, restart wont work because after the while loop breaks, the program will stop. shutdown uses System.exit to stop the program, that stops everything.
 ## Encryption algorithm used for passwords
   SHA-256 is used for passwords.
+### What did the earlier versions use?
+The first Samex password algorithm was... nothing, just stored plaintext passwords, that was replaced with a substitution cipher, then I tried to make the substitution cipher stronger by repeating the process ascii(key.charAt(0)) times. That was also weak. The current version uses SHA-256.
